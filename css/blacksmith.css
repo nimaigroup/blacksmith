@@ -1,0 +1,441 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: black;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: black;
+}
+ol, ul {
+	list-style: disc inside none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clear_all {
+	clear: both;
+}
+
+a {
+	background-color: transparent;
+	background-position: initial initial;
+	background-repeat: initial initial;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	vertical-align: baseline;
+	color: #111;
+	text-decoration: none;
+}
+
+a:hover {
+	/*color: #555;*/
+	text-decoration: none;
+}
+
+a:visited {
+	color: #777;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.7em;
+}
+h4 {
+	font-size: 1.5em;
+}
+
+/* end reset */
+
+.left {
+	float: left;
+	width: auto;
+}
+.right {
+	float: right;
+	width: auto;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.clear {
+	clear: both;
+	height: 1px;
+	margin: 0 0 -1px;
+	width: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+.centered {
+	/*background-color: #fff;*/
+	border-radius: 0px;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	/*border: 1px solid white;*/
+	max-width:100%;
+	max-height: 100%;
+}
+
+.sasaFooterCredit {
+	font-size: 0.8em;
+	padding-bottom: 10px;
+}
+
+.nimai_webart_tag {
+	font-size: 80%;
+	padding-bottom: 10px;
+}
+
+.heartcore_logo {
+	/*margin: 20px;*/
+	padding: 10px;
+	/*cursor: pointer;*/
+}
+
+/*========= CUSTOMS ===========*/
+
+#mainContainer {
+	color: #222;
+	font-style: normal;
+	font-weight: 500;
+	height: 100%;
+	left: 0;
+	overflow: visible;
+	text-align: center;
+	/*text-transform: uppercase;*/
+	top: 0;
+	width: 100%;
+	/*max-height: 820px;*/
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+#blkSmthLogo {
+	color: white;
+	z-index: 100;
+}
+
+#freeRiver {
+	/*padding: 10px;*/
+	/*position: absolute;*/
+	/*top: 50%;*/
+	/*left: 50%;*/
+	/*margin-right: -50%;*/
+	/*transform: translate(-50%, -50%);*/
+	/*max-width:100%;*/
+	/*max-height: 100%;*/
+	z-index: -1;
+}
+
+.AllGlories {
+	font-size: 65%;
+	color: #000;
+}
+.AllGlories a {
+	color: #000;
+}
+
+.AllGlories a:hover {
+	color: #000;
+}
+
+.nimaiHeader {
+	margin: 5px;
+}
+
+.sasaLogo {
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	background-image: url(../images/SasaRA_Logo_300x122.png);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.BgImage {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 1;
+}
+
+@media screen and (min-width: 200px) and (max-width: 399px) {
+	.sasaLogo {
+		height: 20px;
+		width: 200px;
+		padding: 20px;
+		background-image: url(../images/titles/Sasa.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+/*@media screen and (min-width: 600px) and (max-width: 799px) {
+ .sasaLogo {
+ height:122px;
+ width:300px;
+ background-image: url(../images/SasaRA_Logo_300x122.png);
+ background-repeat: no-repeat;
+ background-position: center;
+ margin-left: auto;
+ margin-right: auto;
+ }
+ }*/
+
+@media screen and (min-width: 400px) {
+	.sasaLogo {
+		height: 122px;
+		width: 300px;
+		background-image: url(../images/SasaRA_Logo_300x122.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.specialMessage {
+	padding-bottom: 5px;
+}
+
+.heartcoreLogo {
+	margin: 30px;
+}
+
+.soundcloudPlayer {
+	padding: 10px;
+	position: relative;
+	opacity: 0.75;
+}
+
+.soundcloudPlayer:hover {
+	opacity: 1;
+}
+
+@media screen and (min-width: 200px) and (max-width: 399px) {
+	.mainContainer {
+		margin: 10px;
+		width: 70%
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+	.mainContainer {
+		margin: 10px 8%;
+		
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.mainContainer {
+		margin: 10px 12%;
+	}
+}
+
+/*========= SOCIAL LOGOS ===========*/
+
+@media screen and (min-width: 701px) {
+	.socialLogos {
+		position: relative;
+		padding: 10px;
+		width: 550px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.socialLogos {
+	position: relative;
+	padding: 10px;
+	/*width: 550px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+	.socialLogos {
+		position: relative;
+		padding: 10px;
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.link {
+	background-position: 50% 0;
+	cursor: pointer;
+	display: inline-block;
+	height: 39px;
+	margin: 0 1px;
+	width: 39px;
+	/*box-shadow: 2px 2px 1px #888888;*/
+	opacity: 1;
+}
+
+.link:hover {
+	background-position: 50% 100%;
+}
+
+.link.soundcloud {
+	background-image: url(../images/links/icon_soundcloud.png);
+}
+
+.link.reverbnation {
+	background-image: url(../images/links/icon_reverbnation.png);
+}
+
+.link.facebook {
+	background-image: url(../images/links/icon_facebook.png);
+}
+
+.link.plus {
+	background-image: url(../images/links/icon_plus.png);
+}
+
+.link.twitter {
+	background-image: url(../images/links/icon_twitter.png);
+}
+
+.link.youtube {
+	background-image: url(../images/links/icon_youtube.png);
+}
+
+.link.grooveshark {
+	background-image: url(../images/links/icon_grooveshark.png);
+}
+
+.link.instagram {
+	background-image: url(../images/links/icon_instagram.png);
+}
+
+.link.myspace {
+	background-image: url(../images/links/icon_myspace.png);
+}
+
+.link.pinterest {
+	background-image: url(../images/links/icon_pinterest.png);
+}
+
+.link.mail {
+	background-image: url(../images/links/icon_mail.png);
+}
+
+.link.github {
+	background-image: url(../images/links/icon_github.png);
+}
+
+.link.linkedin {
+	background-image: url(../images/links/icon_linkedin.png);
+}
+
+.link.codepen {
+	background-image: url(../images/links/icon_codepen.png);
+}
+
+.link.medium {
+	background-image: url(../images/links/icon_medium.png);
+}
+
+/*=======  TWITTER FETCHER  ================================*/
+
+.twitterFeed {
+	background-color: rgba(255,255,255,0.7);
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+	line-height: 1.3em;
+	padding: 0px 10px 10px 10px;
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.twitterBG {
+	font-size: 1.3em;
+	opacity: 0.15;
+	z-index: 10;
+}
+
+#twitterFetcher_1 {
+	z-index: 50;
+}
+
+#twitterFetcher_1 ul li {
+	list-style-type: none;
+}
+
+.twitterFeed .tweet {
+	color: #555;
+}
+
+.twitterFeed .interact a {
+	padding: 10px;
+}
+
+.twitterFeed .interact p {
+	padding: 10px;
+	font-size: 80%;
+}
+
+/*================================IMAGES================================*/
+
+.bg {
+	background-color: #FFFFFF;
+	background-position: initial initial;
+	background-repeat: initial initial;
+	height: 200%;
+	left: -50%;
+	position: fixed;
+	top: -50%;
+	width: 200%;
+	z-index: -20;
+}
+
